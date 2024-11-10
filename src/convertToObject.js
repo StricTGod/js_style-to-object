@@ -12,7 +12,7 @@ function convertToObject(sourceString) {
     .reduce((acc, curr) => {
       const [key, value] = curr.split(':').map((str) => str.trim());
 
-      if (key && value !== undefined) {
+      if (key && value) {
         acc[key] = value;
       }
 
